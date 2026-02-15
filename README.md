@@ -12,6 +12,14 @@ To successfully build and compile, you must install the following software in or
 3. **Nsight Visual Studio Edition** - Install nsight_visual_studio_edition-windows-x86_64-2024.2.1.24155_34374119.msi
 4. **Python 3.11.9** - Install the specified Python version
 
+## Packaging and Installation
+
+To build and install this package on your local machine, run the following command:
+
+```bash
+pip install . --no-build-isolation --config-settings=cmake.args="-DGGML_CUDA=ON"
+```
+
 This project is a Python binding implementation for `llama.cpp`. For detailed usage instructions and complete documentation about `llama-cpp-python`, please visit the original repository:
 
 **Original Repository**: [https://github.com/abetlen/llama-cpp-python](https://github.com/abetlen/llama-cpp-python)
